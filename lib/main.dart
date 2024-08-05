@@ -1,7 +1,5 @@
 import 'package:budgeit/constants/app_themes.dart';
-import 'package:budgeit/ui/screens/auth/login_screen.dart';
-import 'package:budgeit/ui/widgets/bottom_navigation_bar.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:budgeit/ui/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -28,15 +26,7 @@ class MyApp extends StatelessWidget {
           themeMode: themeSwitch.themeMode,
           theme: BudgetoThemes.lightTheme,
           darkTheme: BudgetoThemes.darkTheme,
-          home: StreamBuilder<User?>(
-              stream: FirebaseAuth.instance.authStateChanges(),
-              builder: (context, snapshot) {
-                if (snapshot.hasData) {
-                  return const BottomNav();
-                }
-
-                return const LoginScreen();
-              }),
+          home: const SplashScreen(),
         );
       },
     );
