@@ -30,10 +30,10 @@ class BudgetoThemes {
     fontFamily: 'Outfit',
     scaffoldBackgroundColor: Colors.white,
     colorScheme: const ColorScheme.light(),
-    primaryColor: kGreenColor,
+    primaryColor: kPurpleColor,
     cardColor: kCardColor,
     inputDecorationTheme: InputDecorationTheme(
-      hoverColor: kGreenColor,
+      hoverColor: kPurpleColor,
       focusColor: kTextFieldColor,
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
@@ -49,16 +49,16 @@ class BudgetoThemes {
   static final darkTheme = ThemeData(
       canvasColor: kDarkCardC,
       datePickerTheme: const DatePickerThemeData(
-          todayBorder: BorderSide(color: kDarkGreenColor),
-          rangePickerSurfaceTintColor: kDarkGreenColor),
+          todayBorder: BorderSide(color: kDarkPurpleColor),
+          rangePickerSurfaceTintColor: kDarkPurpleColor),
       fontFamily: 'Outfit',
       scaffoldBackgroundColor: kDarkScaffoldC,
       colorScheme: const ColorScheme.dark(),
       cardColor: kDarkCardC,
-      primaryColor: kDarkGreenColor,
+      primaryColor: kDarkPurpleColor,
       inputDecorationTheme: InputDecorationTheme(
-          hoverColor: kDarkGreenColor,
-          focusColor: kDarkGreenColor,
+          hoverColor: kDarkPurpleColor,
+          focusColor: kDarkPurpleColor,
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(color: Colors.transparent),
