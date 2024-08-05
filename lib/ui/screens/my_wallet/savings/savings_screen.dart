@@ -137,10 +137,14 @@ class _SavingsScreenState extends State<SavingsScreen> {
                                   SizedBox(
                                     height: constraints.maxHeight * 0.03,
                                   ),
-                                  const Text(
-                                    'Recent Invesments',
-                                    style: TextStyle(
-                                      fontSize: 20,
+                                  const Material(
+                                    elevation: 1.0,
+                                    shadowColor: kPurpleColor,
+                                    child: Text(
+                                      'Recent Invesments',
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                      ),
                                     ),
                                   ),
                                   SizedBox(
@@ -163,7 +167,7 @@ class _SavingsScreenState extends State<SavingsScreen> {
                                         return const Center(
                                             child:
                                             CircularProgressIndicator(
-                                              color: kGreenColor,
+                                              color: kPurpleColor,
                                             ));
                                       } else {
                                         Map<dynamic, dynamic> map =
@@ -251,7 +255,7 @@ class _SavingsScreenState extends State<SavingsScreen> {
           } else {
             return const Center(
               child: CircularProgressIndicator(
-                color: kGreenColor,
+                color: kPurpleColor,
               ),
             );
           }

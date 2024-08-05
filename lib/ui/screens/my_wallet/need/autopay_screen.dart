@@ -52,12 +52,15 @@ class _AutopayScreenState extends State<AutopayScreen> {
                                     SizedBox(
                                       width: constraints.maxWidth * 0.03,
                                     ),
-                                    const Text(
-                                      'Autopay transactions',
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.w400),
+                                    Material(
+                                      elevation: 1.0,
+                                      child: Text(
+                                        'Autopay transactions',
+                                        textAlign: TextAlign.start,
+                                        style: TextStyle(
+                                          fontSize: 22, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                            .primaryColor,),
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -141,7 +144,7 @@ class _AutopayScreenState extends State<AutopayScreen> {
                                                             : '-${list[index]['amount']}',
                                                         amountColor:
                                                         isAutopayOn
-                                                            ? kGreenColor
+                                                            ? kPurpleColor
                                                             : Colors
                                                             .red,
                                                         transactionName:
@@ -155,7 +158,7 @@ class _AutopayScreenState extends State<AutopayScreen> {
                                                             : 'Paid',
                                                         statusColor:
                                                         isAutopayOn
-                                                            ? kGreenColor
+                                                            ? kPurpleColor
                                                             : Colors
                                                             .red,
                                                       );
@@ -179,7 +182,7 @@ class _AutopayScreenState extends State<AutopayScreen> {
           } else {
             return const Center(
               child: CircularProgressIndicator(
-                color: kGreenColor,
+                color: kPurpleColor,
               ),
             );
           }

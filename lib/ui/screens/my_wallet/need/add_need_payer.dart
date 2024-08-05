@@ -308,11 +308,15 @@ class _AddNeedPayerState extends State<AddNeedPayer> {
                               SizedBox(
                                 width: constraints.maxWidth * 0.03,
                               ),
-                              const Text(
-                                'Add Payer',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                    fontSize: 28, fontWeight: FontWeight.w400),
+                              Material(
+                                elevation: 1.0,
+                                child: Text(
+                                  'Add Payer',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(
+                                      fontSize: 28, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                      .primaryColor,),
+                                ),
                               ),
                             ],
                           ),
@@ -384,7 +388,7 @@ class _AddNeedPayerState extends State<AddNeedPayer> {
                                 ),
                               ),
                               Switch(
-                                  activeColor: kGreenColor,
+                                  activeColor: kPurpleColor,
                                   value: isAutoPayOn,
                                   onChanged: (value) {
                                     setState(() {

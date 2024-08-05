@@ -152,11 +152,15 @@ class _AddExpensesPayerState extends State<AddExpensesPayer> {
                               SizedBox(
                                 width: constraints.maxWidth * 0.03,
                               ),
-                              const Text(
-                                'Account Pay',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                    fontSize: 28, fontWeight: FontWeight.w400),
+                              Material(
+                                elevation: 1.0,
+                                child: Text(
+                                  'Account Pay',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(
+                                    fontSize: 28, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                      .primaryColor,),
+                                ),
                               ),
                             ],
                           ),

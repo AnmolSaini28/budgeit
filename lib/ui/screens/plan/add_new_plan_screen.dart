@@ -61,11 +61,14 @@ class _AddNewPlanScreenState extends State<AddNewPlanScreen> {
                               SizedBox(
                                 width: constraints.maxWidth * 0.03,
                               ),
-                              const Text(
-                                'Add new plan',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                    fontSize: 28, fontWeight: FontWeight.w400),
+                              Material(
+                                elevation: 1.0,
+                                child: Text(
+                                  'Add new plan',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.w400, color: Theme.of(context).primaryColor),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
                               ),
                             ],
                           ),

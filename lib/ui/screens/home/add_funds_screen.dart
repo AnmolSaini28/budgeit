@@ -162,11 +162,15 @@ class _AddFundsScreenState extends State<AddFundsScreen> {
                               SizedBox(
                                 width: constraints.maxWidth * 0.03,
                               ),
-                              const Text(
-                                'Add Funds',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                    fontSize: 28, fontWeight: FontWeight.w400),
+                              Material(
+                                elevation: 1.0,
+                                child: Text(
+                                  'Add Funds',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(
+                                      fontSize: 28, fontWeight: FontWeight.w400,
+                                    color: Theme.of(context).primaryColor,),
+                                ),
                               ),
                             ],
                           ),

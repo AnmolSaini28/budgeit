@@ -59,22 +59,29 @@ class _PlanningScreeenState extends State<PlanningScreeen> {
                                   SizedBox(
                                     height: constraints.maxHeight * 0.03,
                                   ),
-                                  const Text(
-                                    'Planning',
-                                    textAlign: TextAlign.start,
-                                    style: TextStyle(
-                                        fontSize: 28,
-                                        fontWeight: FontWeight.w400),
+                                  Material(
+                                    elevation: 1.0,
+                                    child: Text(
+                                      'Planning',
+                                      textAlign: TextAlign.start,
+                                      style: TextStyle(
+                                        fontSize: 28, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                          .primaryColor,),
+                                    ),
                                   ),
                                   SizedBox(
                                     height: constraints.maxHeight * 0.02,
                                   ),
-                                  const Text(
-                                    'Default plans',
-                                    textAlign: TextAlign.start,
-                                    style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w400),
+                                  const Material(
+                                    elevation: 1.0,
+                                    shadowColor: kPurpleColor,
+                                    child: Text(
+                                      'Default plans',
+                                      textAlign: TextAlign.start,
+                                      style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400),
+                                    ),
                                   ),
                                   SizedBox(
                                     height: constraints.maxHeight * 0.02,
@@ -163,12 +170,16 @@ class _PlanningScreeenState extends State<PlanningScreeen> {
                                   SizedBox(
                                     height: constraints.maxHeight * 0.03,
                                   ),
-                                  const Text(
-                                    'Add plans',
-                                    textAlign: TextAlign.start,
-                                    style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w400),
+                                  const Material(
+                                    elevation: 1.0,
+                                    shadowColor: kPurpleColor,
+                                    child: Text(
+                                      'Add plans',
+                                      textAlign: TextAlign.start,
+                                      style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400),
+                                    ),
                                   ),
                                   SizedBox(
                                     height: constraints.maxHeight * 0.02,
@@ -203,7 +214,7 @@ class _PlanningScreeenState extends State<PlanningScreeen> {
           } else {
             return const Center(
               child: CircularProgressIndicator(
-                color: kGreenColor,
+                color: kPurpleColor,
               ),
             );
           }

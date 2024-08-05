@@ -35,7 +35,7 @@ class CustomTextField extends StatelessWidget {
           hintText: hint,
           hintStyle: const TextStyle(fontSize: 16, color: kGrayC),
           filled: true,
-          hoverColor: kGreenColor,
+          hoverColor: kPurpleColor,
           focusColor: kTextFieldColor,
           focusedBorder: Theme.of(context).inputDecorationTheme.focusedBorder,
           enabledBorder: Theme.of(context).inputDecorationTheme.enabledBorder),

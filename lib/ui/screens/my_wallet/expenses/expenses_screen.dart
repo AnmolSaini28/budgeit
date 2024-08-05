@@ -154,9 +154,13 @@ class _ExpensesScreenState extends State<ExpensesScreen> {
                                             SizedBox(
                                               height: constraints.maxHeight * 0.03,
                                             ),
-                                            const Text(
-                                              'Expenses Transactions',
-                                              style: TextStyle(fontSize: 20),
+                                            const Material(
+                                              elevation: 1.0,
+                                              shadowColor: kPurpleColor,
+                                              child: Text(
+                                                'Expenses Transactions',
+                                                style: TextStyle(fontSize: 20),
+                                              ),
                                             ),
                                             SizedBox(
                                               height: constraints.maxHeight * 0.03,
@@ -179,7 +183,7 @@ class _ExpensesScreenState extends State<ExpensesScreen> {
                                                   return const Center(
                                                       child:
                                                       CircularProgressIndicator(
-                                                        color: kGreenColor,
+                                                        color: kPurpleColor,
                                                       ));
                                                 } else {
                                                   Map<dynamic, dynamic> map =
@@ -270,7 +274,7 @@ class _ExpensesScreenState extends State<ExpensesScreen> {
           } else {
             return const Center(
               child: CircularProgressIndicator(
-                color: kGreenColor,
+                color: kPurpleColor,
               ),
             );
           }

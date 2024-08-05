@@ -61,11 +61,15 @@ class _AutoInvestmentScreenState extends State<AutoInvestmentScreen> {
                               SizedBox(
                                 width: constraints.maxWidth * 0.03,
                               ),
-                              const Text(
-                                'Automatic Investment',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                    fontSize: 22, fontWeight: FontWeight.w400),
+                              Material(
+                                elevation: 1.0,
+                                child: Text(
+                                  'Automatic Investment',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(
+                                    fontSize: 22, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                      .primaryColor,),
+                                ),
                               ),
                             ],
                           ),

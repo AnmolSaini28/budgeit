@@ -52,12 +52,15 @@ class _PayersScreenState extends State<PayersScreen> {
                                     SizedBox(
                                       width: constraints.maxWidth * 0.03,
                                     ),
-                                    const Text(
-                                      'Payers',
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                          fontSize: 24,
-                                          fontWeight: FontWeight.w400),
+                                    Material(
+                                      elevation: 1.0,
+                                      child: Text(
+                                        'Payers',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontSize: 28, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                            .primaryColor,),
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -181,7 +184,7 @@ class _PayersScreenState extends State<PayersScreen> {
           } else {
             return const Center(
               child: CircularProgressIndicator(
-                color: kGreenColor,
+                color: kPurpleColor,
               ),
             );
           }

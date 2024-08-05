@@ -72,12 +72,14 @@ class _UserProfileScreeenState extends State<UserProfileScreeen> {
                                   mainAxisAlignment:
                                   MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text(
-                                      'Profile',
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                          fontSize: 28,
-                                          fontWeight: FontWeight.w400),
+                                    Material(
+                                      elevation: 1.0,
+                                      child: Text(
+                                        'Profile',
+                                        textAlign: TextAlign.start,
+                                        style: TextStyle(fontSize: 28, fontWeight: FontWeight.w400, color: Theme.of(context).primaryColor),
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
                                     ),
                                     IconButton(
                                         onPressed: () {
@@ -227,7 +229,7 @@ class _UserProfileScreeenState extends State<UserProfileScreeen> {
         } else {
           return const Center(
             child: CircularProgressIndicator(
-              color: kGreenColor,
+              color: kPurpleColor,
             ),
           );
         }
@@ -244,14 +246,14 @@ class _UserProfileScreeenState extends State<UserProfileScreeen> {
       activeToggleColor: kDarkCardC,
       inactiveToggleColor: Theme.of(context).primaryColor,
       activeSwitchBorder: Border.all(
-        color: kDarkGreenBackC,
+        color: kDarkPurpleBackC,
         width: 4,
       ),
       inactiveSwitchBorder: Border.all(
         color: kTextFieldBorderC,
         width: 4,
       ),
-      activeColor: kDarkGreenColor,
+      activeColor: kDarkPurpleColor,
       inactiveColor: kTextFieldColor,
       activeIcon: Icon(
         Icons.nightlight_round,

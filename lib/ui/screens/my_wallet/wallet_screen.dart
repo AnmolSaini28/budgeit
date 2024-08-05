@@ -30,21 +30,28 @@ class _WalletScreenState extends State<WalletScreen>
                       SizedBox(
                         height: constraints.maxHeight * 0.03,
                       ),
-                      const Text(
-                        'My Wallet',
-                        textAlign: TextAlign.start,
-                        style: TextStyle(
-                            fontSize: 28, fontWeight: FontWeight.w400),
+                      Material(
+                        elevation: 2.0,
+                        child: Text(
+                          'My Wallet',
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.w400,
+                            color: Theme.of(context)
+                                .primaryColor,
+                          ),
+                        ),
                       ),
                       SizedBox(
                         height: constraints.maxHeight * 0.005,
                       ),
                       TabBar(
                         indicatorSize: TabBarIndicatorSize.label,
-                        labelColor: kGreenColor,
+                        labelColor: kPurpleColor,
                         controller: _tabController,
                         unselectedLabelColor: kGrayTextC,
-                        indicatorColor: kGreenColor,
+                        indicatorColor: kPurpleColor,
                         tabs: const [
                           Tab(text: 'Need'),
                           Tab(text: 'Expenses'),

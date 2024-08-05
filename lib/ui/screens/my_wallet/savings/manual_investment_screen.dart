@@ -45,11 +45,15 @@ class _ManualInvestmentScreenState extends State<ManualInvestmentScreen> {
                             SizedBox(
                               width: constraints.maxWidth * 0.03,
                             ),
-                            const Text(
-                              'Manual Investment',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                  fontSize: 24, fontWeight: FontWeight.w400),
+                            Material(
+                              elevation: 1.0,
+                              child: Text(
+                                'Manual Investment',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                  fontSize: 24, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                    .primaryColor,),
+                              ),
                             ),
                           ],
                         ),

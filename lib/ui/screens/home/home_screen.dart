@@ -151,14 +151,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                         SizedBox(
                                           height: constraints.maxHeight * 0.03,
                                         ),
-                                        Text(
-                                          'Budgeit',
-                                          textAlign: TextAlign.start,
-                                          style: TextStyle(
-                                              fontSize: 32,
-                                              color: Theme.of(context)
-                                                  .primaryColor,
-                                              fontWeight: FontWeight.w600),
+                                        Material(
+                                          elevation: 1.0,
+                                          child: Text(
+                                            'Budgeit',
+                                            textAlign: TextAlign.start,
+                                            style: TextStyle(
+                                                fontSize: 32,
+                                                color: Theme.of(context)
+                                                    .primaryColor,
+                                                fontWeight: FontWeight.w600),
+                                          ),
                                         ),
                                         SizedBox(
                                           height: constraints.maxHeight * 0.02,
@@ -240,8 +243,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   BudgetoThemes.isDarkMode(
                                                       context) ==
                                                       true
-                                                      ? kDarkGreenBackC
-                                                      : kGreenDarkC,
+                                                      ? kDarkPurpleBackC
+                                                      : kPurpleDarkC,
                                                 ),
                                                 child: Padding(
                                                   padding: const EdgeInsets
@@ -324,8 +327,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         .isDarkMode(
                                                         context) ==
                                                         true
-                                                        ? kDarkGreenBackC
-                                                        : kGreenDarkC,
+                                                        ? kDarkPurpleBackC
+                                                        : kPurpleDarkC,
                                                   ),
                                                   child: const Padding(
                                                     padding:
@@ -362,9 +365,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                         SizedBox(
                                           height: constraints.maxHeight * 0.02,
                                         ),
-                                        const Text(
-                                          'Category Balance',
-                                          style: TextStyle(fontSize: 20),
+                                        const Material(
+                                          elevation: 2.0,
+                                          shadowColor: kPurpleColor,
+                                          child: Text(
+                                            'Category Balance',
+                                            style: TextStyle(fontSize: 20),
+                                          ),
                                         ),
                                         SizedBox(
                                           height: constraints.maxHeight * 0.02,
@@ -423,9 +430,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                         SizedBox(
                                           height: constraints.maxHeight * 0.02,
                                         ),
-                                        const Text(
-                                          'All Transactions',
-                                          style: TextStyle(fontSize: 20),
+                                        const Material(
+                                          elevation: 2.0,
+                                          shadowColor: kPurpleColor,
+                                          child: Text(
+                                            'All Transactions',
+                                            style: TextStyle(fontSize: 20),
+                                          ),
                                         ),
                                         SizedBox(
                                           height: constraints.maxHeight * 0.015,
@@ -447,7 +458,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               return const Center(
                                                   child:
                                                   CircularProgressIndicator(
-                                                    color: kGreenColor,
+                                                    color: kPurpleColor,
                                                   ));
                                             } else {
                                               Map<dynamic, dynamic> map =
@@ -540,7 +551,7 @@ class _HomeScreenState extends State<HomeScreen> {
               } else {
                 return const Center(
                   child: CircularProgressIndicator(
-                    color: kGreenColor,
+                    color: kPurpleColor,
                   ),
                 );
               }

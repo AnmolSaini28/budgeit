@@ -105,11 +105,15 @@ class _NeedPayersPayScreenState extends State<NeedPayersPayScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          'Pay Now',
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                              fontSize: 28, fontWeight: FontWeight.w400),
+                        Material(
+                          elevation: 1.0,
+                          child: Text(
+                            'Pay Now',
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontSize: 28, fontWeight: FontWeight.w400, color: Theme.of(context)
+                                .primaryColor,),
+                          ),
                         ),
                         SizedBox(
                           height: constraints.maxHeight * 0.02,
@@ -127,7 +131,7 @@ class _NeedPayersPayScreenState extends State<NeedPayersPayScreen> {
                         ),
                         const Text(
                           'Payer Name',
-                          style: TextStyle(fontSize: 22, color: kGreenColor),
+                          style: TextStyle(fontSize: 22, color: kPurpleColor),
                         ),
                         Text(
                           widget.name,
@@ -140,7 +144,7 @@ class _NeedPayersPayScreenState extends State<NeedPayersPayScreen> {
                         ),
                         const Text(
                           'Account Number',
-                          style: TextStyle(fontSize: 22, color: kGreenColor),
+                          style: TextStyle(fontSize: 22, color: kPurpleColor),
                         ),
                         Text(
                           widget.accountNumber,
@@ -153,7 +157,7 @@ class _NeedPayersPayScreenState extends State<NeedPayersPayScreen> {
                         ),
                         const Text(
                           'Amount',
-                          style: TextStyle(fontSize: 22, color: kGreenColor),
+                          style: TextStyle(fontSize: 22, color: kPurpleColor),
                         ),
                         SizedBox(
                           height: constraints.maxHeight * 0.02,
@@ -175,7 +179,7 @@ class _NeedPayersPayScreenState extends State<NeedPayersPayScreen> {
                         ),
                         const Text(
                           'Short description',
-                          style: TextStyle(fontSize: 22, color: kGreenColor),
+                          style: TextStyle(fontSize: 22, color: kPurpleColor),
                         ),
                         SizedBox(
                           height: constraints.maxHeight * 0.02,

@@ -123,12 +123,14 @@ class _UpdateAccountScreenState extends State<UpdateAccountScreen> {
                                     SizedBox(
                                       width: constraints.maxWidth * 0.03,
                                     ),
-                                    const Text(
-                                      'Update Account',
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                          fontSize: 24,
-                                          fontWeight: FontWeight.w400),
+                                    Material(
+                                      elevation: 1.0,
+                                      child: Text(
+                                        'Update Account',
+                                        textAlign: TextAlign.start,
+                                        style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400, color: Theme.of(context).primaryColor),
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -212,6 +214,7 @@ class _UpdateAccountScreenState extends State<UpdateAccountScreen> {
                                     iconName: Icons.account_balance,
                                     controller: bankAccountController,
                                     validator: checkValid,
+                                    obscureText: true,
                                     keyboardType: TextInputType.number,
                                     inputFormatters: [
                                       FilteringTextInputFormatter.digitsOnly
@@ -222,6 +225,7 @@ class _UpdateAccountScreenState extends State<UpdateAccountScreen> {
                                     iconName: Icons.person,
                                     controller: kycController,
                                     validator: checkValid,
+                                    obscureText: true,
                                     keyboardType: TextInputType.number,
                                     inputFormatters: [
                                       FilteringTextInputFormatter.digitsOnly

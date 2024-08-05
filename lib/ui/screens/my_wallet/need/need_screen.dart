@@ -166,9 +166,13 @@ class _NeedScreenState extends State<NeedScreen> {
                                   SizedBox(
                                     height: constraints.maxHeight * 0.03,
                                   ),
-                                  const Text(
-                                    'Need Transactions',
-                                    style: TextStyle(fontSize: 20),
+                                  const Material(
+                                    elevation: 1.0,
+                                    shadowColor: kPurpleColor,
+                                    child: Text(
+                                      'Need Transactions',
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                   SizedBox(
                                     height: constraints.maxHeight * 0.03,
@@ -190,7 +194,7 @@ class _NeedScreenState extends State<NeedScreen> {
                                         return const Center(
                                             child:
                                             CircularProgressIndicator(
-                                              color: kGreenColor,
+                                              color: kPurpleColor,
                                             ));
                                       } else {
                                         Map<dynamic, dynamic> map =
@@ -278,7 +282,7 @@ class _NeedScreenState extends State<NeedScreen> {
           } else {
             return const Center(
               child: CircularProgressIndicator(
-                color: kGreenColor,
+                color: kPurpleColor,
               ),
             );
           }

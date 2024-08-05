@@ -140,11 +140,14 @@ class _EmergencyPlanningScreenState extends State<EmergencyPlanningScreen> {
                               SizedBox(
                                 width: constraints.maxWidth * 0.03,
                               ),
-                              const Text(
-                                'Emergency funds plan',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
-                                overflow: TextOverflow.ellipsis,
+                              Material(
+                                elevation: 1.0,
+                                child: Text(
+                                  'Emergency funds plan',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400, color: Theme.of(context).primaryColor),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
                               ),
                             ],
                           ),

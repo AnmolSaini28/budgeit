@@ -55,7 +55,7 @@ class ProfileController with ChangeNotifier {
                     },
                     leading: const Icon(
                       Icons.camera,
-                      color: kGreenColor,
+                      color: kPurpleColor,
                     ),
                     title: const Text('Camera'),
                   ),
@@ -66,7 +66,7 @@ class ProfileController with ChangeNotifier {
                     },
                     leading: const Icon(
                       Icons.image,
-                      color: kGreenColor,
+                      color: kPurpleColor,
                     ),
                     title: const Text('Gallery'),
                   )
