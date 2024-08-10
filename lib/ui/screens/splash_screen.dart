@@ -1,3 +1,4 @@
+import 'package:budgeit/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -35,12 +36,39 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Image.asset(
-          'assets/app_icon.png',
-          fit: BoxFit.cover,
-          height: 250,
-          width: 250,
-          alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset(
+              'assets/app_icon.png',
+              width: 280,
+              height: 280,
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              'BUDGEIT',
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Outfit',
+                color: kPurpleColor,
+              ),
+            ),
+            const SizedBox(height: 15),
+            Text(
+              'Transforming the way you Budget!',
+              style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Outfit',
+                foreground: Paint()
+                  ..shader = const LinearGradient(
+                    colors: <Color>[Colors.purple, Colors.blue],
+                  ).createShader(const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
         ),
       ),
     );
