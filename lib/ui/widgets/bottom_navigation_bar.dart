@@ -30,7 +30,7 @@ class _BottomNavState extends State<BottomNav> {
   }
 
   List<PersistentBottomNavBarItem> navBarItem() {
-    dynamic navBarColor = BudgetoThemes.isDarkMode(context) == true
+    dynamic navBarColor = BudgeitThemes.isDarkMode(context) == true
         ? kDarkPurpleNavIconC
         : kPurpleNavC;
     return [
@@ -75,7 +75,7 @@ class _BottomNavState extends State<BottomNav> {
             },
             navBarHeight: 60,
             decoration: NavBarDecoration(
-              colorBehindNavBar: BudgetoThemes.isDarkMode(context) == true
+              colorBehindNavBar: BudgeitThemes.isDarkMode(context) == true
                   ? kDarkPurpleBackC
                   : kPurpleDarkC,
               borderRadius: const BorderRadius.only(

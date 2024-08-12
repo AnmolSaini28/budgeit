@@ -52,7 +52,7 @@ class CardAlt extends StatelessWidget {
           Icon(
             iconName,
             size: 25,
-            color: BudgetoThemes.isDarkMode(context) == true
+            color: BudgeitThemes.isDarkMode(context) == true
                 ? Colors.white
                 : kFontBlackC,
           )

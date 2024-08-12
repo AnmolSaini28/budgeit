@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           themeMode: themeSwitch.themeMode,
-          theme: BudgetoThemes.lightTheme,
-          darkTheme: BudgetoThemes.darkTheme,
+          theme: BudgeitThemes.lightTheme,
+          darkTheme: BudgeitThemes.darkTheme,
           home: const SplashScreen(),
         );
       },

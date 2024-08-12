@@ -20,7 +20,7 @@ class ThemeSwitch extends ChangeNotifier {
   }
 }
 
-class BudgetoThemes {
+class BudgeitThemes {
   static final lightTheme = ThemeData(
     canvasColor: kCardColor,
     textTheme: const TextTheme(

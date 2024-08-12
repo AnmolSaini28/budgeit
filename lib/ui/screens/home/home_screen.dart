@@ -240,7 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     Radius.circular(25),
                                                   ),
                                                   color:
-                                                  BudgetoThemes.isDarkMode(
+                                                  BudgeitThemes.isDarkMode(
                                                       context) ==
                                                       true
                                                       ? kDarkPurpleBackC
@@ -323,7 +323,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     const BorderRadius.all(
                                                       Radius.circular(25),
                                                     ),
-                                                    color: BudgetoThemes
+                                                    color: BudgeitThemes
                                                         .isDarkMode(
                                                         context) ==
                                                         true

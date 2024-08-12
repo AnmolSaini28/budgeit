@@ -40,9 +40,9 @@ class _AddNeedPayerState extends State<AddNeedPayer> {
     ThemeData currentTheme = Theme.of(context);
 
     if (currentTheme.brightness == Brightness.light) {
-      currentTheme = BudgetoThemes.lightTheme;
+      currentTheme = BudgeitThemes.lightTheme;
     } else {
-      currentTheme = BudgetoThemes.darkTheme;
+      currentTheme = BudgeitThemes.darkTheme;
     }
 
     final DateTime? picked = await showDatePicker(
