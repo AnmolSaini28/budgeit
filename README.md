@@ -1,6 +1,6 @@
 
 # Budgeit
-![Logo](https://github.com/AnmolSaini28/budgeit/assets/app_icon.png)
+![Logo](https://github.com/AnmolSaini28/budgeit/blob/master/assets/app_icon.png)
 
 
 Budgeit is a money management prototype app that allows users to split their income into customizable categories of "need," "expenses," and "savings." With features like autopay for bills, manual and planning tools for emergency funds and car purchases, Budgeto helps users stay on top of their finances and reach their financial goals.
