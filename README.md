@@ -33,70 +33,6 @@ Budgeit features user email authentication, which adds an extra layer of securit
 - Automatic monthly deduction of required amounts for emergency funds and car plan
 
 
-
-## GIF
-
-- **Add Funds**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/add%20funds.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Need Category Autopay**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/need%20autopay.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Need Direct Pay**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/need%20pay.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Expenses Category**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/expenses%20pay.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Savings Category - Manual Investment**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/savings%20-%20manual%20investment.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Planning - Emergency Funds**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/planning%20-%20emergency%20funds.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Planning - Car Plan**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/planning%20-%20car%20plan.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Light Theme**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/light%20theme.gif?raw=true)
-
-___________________________________________________________________
-
-
-- **Dark Theme**
-
-![](https://github.com/tejasbadone/budgeto/blob/main/assets/images/screenshots/gif/dark%20theme.gif?raw=true)
-
-
 ## Download
 Download apk - https://drive.google.com/file/d/1ND6bVOeYheTLN19f6EMqhVEY8JlVIEhq/view?usp=share_link
 
@@ -116,12 +52,6 @@ Run the following commands from your terminal:
 **Client:** Flutter
 
 **Server:** Firebase
-
-
-## Test Credentials
-**Email:** admin@email.com
-
-**Password:** admin123
 
 
 ## Note
